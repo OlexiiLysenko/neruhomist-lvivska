@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="col-xs-10">
+		<ul class="list-group">
+			<a 
+			class="list-group-item" 
+			*ngFor="let feedback of feedbacks"
+			>
+			<p style="color: skyblue;">{{ feedback.name }} </p>
+			
+			{{ feedback.text }}
+		</a>
+	</ul>
+	<hr>
+	<app-feedback-edit
+	(feedbackAdded)="onFeedbackAdded($event)"></app-feedback-edit>
+
+</div>
+</div>
+

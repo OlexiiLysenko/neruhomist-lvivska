@@ -1,0 +1,17 @@
+<div class="row">
+	<div class="col-xs-12">
+		<h5>{{ building.name }}</h5>
+
+		<app-rooms-item 
+		*ngIf='building.counter == 1'
+		[room]="roomEl"
+   ></app-rooms-item>
+
+		<app-rooms1 
+		*ngIf='building.counter == 2'
+		[room]="roomEl"
+		></app-rooms1>
+
+	</div>
+</div>
+

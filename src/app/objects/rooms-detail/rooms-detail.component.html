@@ -1,0 +1,24 @@
+<div class="row">
+	<div class="col-xs-12">
+		<img [src]="room.imagePath" alt="{{ room.name }}" class="img-responsive" style="height: 400px;">
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<h1>{{ room.name }}</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		{{ room.description }}
+	</div>
+</div>
+<hr>
+<div class="row">
+	<div class="col-xs-12">
+		<p>Загальна площа: {{ room.area}} м<sup>2</sup></p> 
+		<p>Вартість: {{ room.price }} за м<sup>2</sup></p> 
+		<p>Квартира знаходиться на {{ room.floor }} поверсі.</p>
+	</div>
+</div>
+

@@ -1,0 +1,197 @@
+/* .bg {
+  background-color: #222;
+}
+ */
+#main-text {
+  /* background-color: rgba(176, 180, 186, 0.25); */
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  top: -200px;
+  left: -30px;
+  font-family: 'Jura', sans-serif;
+  z-index: 1;
+}
+
+/* line 49, ../sass/styles.scss */
+#description-text {
+  /* background-color: rgba(176, 180, 186, 0.25); */
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: -120px;
+  left: -30px;
+  font-family: 'Jura', sans-serif;
+  z-index: 1;
+}
+
+
+
+@media (max-width: 1300px){
+  /* line 341, ../sass/styles.scss */
+  #main-text {
+    /* background-color: rgba(176, 180, 186, 0.25); */
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: -150px;
+    left: 40px;
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+  }
+
+  /* line 352, ../sass/styles.scss */
+  #description-text {
+    /* background-color: rgba(176, 180, 186, 0.25); */
+    color: #fff;
+    font-size: 15px;
+    padding: 25px;
+    position: absolute;
+    top: -120px;
+    left: 20px;
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1030px){
+  /* line 341, ../sass/styles.scss */
+  #main-text {
+    /* background-color: rgba(176, 180, 186, 0.25); */
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: -130px;
+    left: 50px;
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+  }
+
+  /* line 352, ../sass/styles.scss */
+  #description-text {
+    /* background-color: rgba(176, 180, 186, 0.25); */
+    color: #fff;
+    font-size: 15px;
+    padding: 25px;
+    position: absolute;
+    top: -100px;
+    left: 30px;
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 996px){
+  /* line 341, ../sass/styles.scss */
+  #main-text {
+    /* background-color: rgba(176, 180, 186, 0.25); */
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    top: -130px;
+    left: 20px;
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+  }
+
+  /* line 352, ../sass/styles.scss */
+  #description-text {
+    /* background-color: rgba(176, 180, 186, 0.25); */
+    color: #fff;
+    font-size: 15px;
+    padding: 25px;
+    padding-right: 200px;
+    position: absolute;
+    top: -110px;
+    left: 0px;
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 650px) {
+
+  /* line 341, ../sass/styles.scss */
+  #main-text {
+    /* background-color: rgba(176, 180, 186, 0.25); */
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: -120px;
+    left: 60px;
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+  }
+
+  /* line 352, ../sass/styles.scss */
+  #description-text {
+    /* background-color: rgba(176, 180, 186, 0.25); */
+    color: #fff;
+    font-size: 12px;
+    padding: 25px;
+    padding-right: 200px;
+    position: absolute;
+    top: -120px;
+    left: 40px;
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 522px) {
+
+  /* line 341, ../sass/styles.scss */
+  #main-text {
+    /* background-color: rgba(176, 180, 186, 0.25); */
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    top: -110px;
+    left: 60px;
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+  }
+
+  /* line 352, ../sass/styles.scss */
+  #description-text {
+    /* background-color: rgba(176, 180, 186, 0.25); */
+    color: #fff;
+    font-size: 10px;
+    padding: 25px;
+    padding-right: 200px;
+    position: absolute;
+    top: -100px;
+    left: 40px;
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 450px) {
+
+  /* line 341, ../sass/styles.scss */
+  #main-text {
+    /* background-color: rgba(176, 180, 186, 0.25); */
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    top: -90px;
+    left: 60px;
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+  }
+
+  /* line 352, ../sass/styles.scss */
+  #description-text {
+    /* background-color: rgba(176, 180, 186, 0.25); */
+    color: #fff;
+    font-size: 8px;
+    padding: 25px;
+    padding-right: 150px;
+    position: absolute;
+    top: -90px;
+    left: 40px;
+    font-family: 'Jura', sans-serif;
+    z-index: 1;
+  }
+}

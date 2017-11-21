@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="col-md-3">
+				<app-news-list 
+				(articleWasSelected)="selectedArticle = $event"
+				
+				[article]="selectedArticle"></app-news-list>
+			</div>
+
+			<div class="col-md-9">
+				<app-news-item-detail
+				*ngIf="selectedArticle; else infoText"
+				[article]="selectedArticle"></app-news-item-detail>
+
+				<ng-template #infoText>
+					<p style="color: skyblue;">Будь-ласка, оберіть Новину зі списку</p>
+				</ng-template>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+<div class="row">
+	<div class="col-xs-12">
+
+		<app-news-item 
+		*ngFor="let articleEl of articles"
+		[article]="articleEl"
+		(articleSelected)="onArticleSelected(articleEl)"></app-news-item>
+		
+		
+	</div>
+</div>
+

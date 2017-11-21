@@ -1,0 +1,9 @@
+<div class="row">
+	<div class="col-xs-12">
+		<app-building-item
+			*ngFor="let buildingEl of buildings"
+			[building]="buildingEl"
+			(buildingSelected)="onBuildingSelected(buildingEl)"></app-building-item>
+	</div>
+</div>
+

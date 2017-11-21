@@ -1,0 +1,26 @@
+
+<div class="container">
+  <div class="row">
+    <app-header (featureSelected)="onNavigate($event)"></app-header>
+  </div>
+</div>
+<img src="assets/main.jpg" class="img-responsive" alt="Responsive image" style="width: 100%; height: auto;z-index: -1; margin-bottom: -40px;" *ngIf="loadedFeature === 'main'">
+<img src="assets/neruhomist.png" class="img-responsive" alt="contacts" style="width: 100%; height: auto;z-index: -1; margin-bottom: -95px;" *ngIf="loadedFeature === 'contacts'">
+<img src="assets/cat-2603395.jpg" class="img-responsive" alt="contacts" style="width: 100%; height: auto;z-index: -1; margin-bottom: -155px;" *ngIf="loadedFeature === 'collaborate'">
+<br *ngIf="loadedFeature !== 'main'">
+<br *ngIf="loadedFeature !== 'main'">
+<br *ngIf="loadedFeature !== 'main'">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+     <app-main *ngIf="loadedFeature === 'main'"></app-main>
+     <app-about *ngIf="loadedFeature === 'about'"></app-about>
+     <app-news *ngIf="loadedFeature === 'news'"></app-news>
+     <app-objects *ngIf="loadedFeature === 'objects'"></app-objects>
+     <app-feedback *ngIf="loadedFeature === 'feedback'"></app-feedback>
+     <app-collaborate *ngIf="loadedFeature === 'collaborate'"></app-collaborate>
+     <app-contacts *ngIf="loadedFeature === 'contacts'"></app-contacts>
+     <app-footer></app-footer>
+   </div>
+ </div>
+</div>

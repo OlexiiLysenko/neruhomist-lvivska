@@ -1,0 +1,38 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="col-md-3">
+				<p class="description">Об'єкт будівництва:</p>
+				<app-building
+				(buildingWasSelected)="selectedBuilding = $event"></app-building>
+			</div>
+			<div class="col-md-2">
+				<p class="description">Доступні Квартири:</p>
+
+
+				<app-rooms
+				(roomWasSelected)="selectedRoom = $event"
+				*ngIf="selectedBuilding; else infoText1"
+				[building]="selectedBuilding"></app-rooms>
+
+			<ng-template #infoText1>
+				<p>Будь-ласка, оберіть Об'єкт будівництва</p>
+			</ng-template>
+
+</div>
+
+
+			<div class="col-md-7">
+				<p class="description">Детальний опис Квартири:</p>
+				<app-rooms-detail
+				*ngIf="selectedRoom; else infoText"
+				[room]="selectedRoom"></app-rooms-detail>
+				<ng-template #infoText>
+					<p>
+						Будь-ласка, оберіть Вашу Квартиру.
+					</p>
+				</ng-template>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,23 @@
+
+	<div 
+	*ngFor="let roomEl of roomsAGK"
+	>
+	<a href="#" class="list-group-item clearfix paint"
+	(click)="onSelected1()">
+	<div class="pull-left">
+		<h4 class="list-group-item-heading">{{ roomEl.name}}</h4>
+				<!-- <p class="list-group-item-text">Площа загальна: {{ room.area }} м<sup>2</sup></p>
+				<p class="list-group-item-text">Вартість м<sup>2</sup>: {{ room.price }} грн.</p> -->
+				<p class="list-group-item-text">Поверх: {{ roomEl.floor }} - {{ roomEl.area }} м<sup>2</sup></p>
+				<!-- <p class="list-group-item-text">{{ room.description }}</p> -->
+			</div>
+			<!-- <span class="pull-right">
+				<img 
+					[src]="room.imagePath"
+					class="img-responsive" 
+					alt="{{ room.name }}" 
+					style="max-height: 50px;">
+				</span> -->
+			</a>
+		</div>
+	

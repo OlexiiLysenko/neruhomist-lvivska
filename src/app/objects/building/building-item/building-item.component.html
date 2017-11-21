@@ -1,0 +1,17 @@
+<!-- <p>
+	building-item works!
+</p> -->
+<a href="#" class="list-group-item clearfix"
+(click)="onSelected()">
+			<div class="pull-left">
+				<h4 class="list-group-item-heading">{{ building.name}}</h4>
+				<p class="list-group-item-text">{{ building.description }}</p>
+			</div>
+			<span class="pull-right">
+				<img 
+					[src]="building.imagePath"
+					class="img-responsive" 
+					alt="{{ building.name }}" 
+					style="max-width: 60px;">
+			</span>
+		</a>
